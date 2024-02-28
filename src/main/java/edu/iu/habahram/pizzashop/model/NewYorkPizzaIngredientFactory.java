@@ -1,22 +1,23 @@
 package edu.iu.habahram.pizzashop.model;
 
-public class NewYorkPizzaIngredientFactory {
+public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory{
     public Dough createDough() {
-        return new ThickCrustDough();
+        return new ThinCrustDough();
     }
 
     public Sauce createSauce() {
-        return new PlumTomatoSauce();
+        return new MarinaraSauce();
     }
 
     public Cheese createCheese() {
-        return new MozzarellaCheese();
+        return new ReggianoCheese();
     }
 
+
     public Veggies[] createVeggies() {
-        Veggies veggies[] = { new BlackOlives(),
-                new Spinach(),
-                new Eggplant() };
+        Veggies veggies[] = { new Mushrooms(),
+                new Onions(),
+                new RedPeppers() };
         return veggies;
     }
 
@@ -25,6 +26,6 @@ public class NewYorkPizzaIngredientFactory {
     }
 
     public Clams createClam() {
-        return new FrozenClams();
+        return new FreshClams();
     }
 }

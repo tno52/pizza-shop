@@ -16,6 +16,7 @@ public class ChicagoPizzaIngredientFactory
 		return new MozzarellaCheese();
 	}
 
+
 	public Veggies[] createVeggies() {
 		Veggies veggies[] = { new BlackOlives(), 
 		                      new Spinach(), 
@@ -26,6 +27,7 @@ public class ChicagoPizzaIngredientFactory
 	public Pepperoni createPepperoni() {
 		return new SlicedPepperoni();
 	}
+
 
 	public Clams createClam() {
 		return new FrozenClams();
